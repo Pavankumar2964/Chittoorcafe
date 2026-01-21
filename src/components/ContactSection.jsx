@@ -52,9 +52,16 @@ const ContactSection = () => {
                         </div>
 
                         <div className="mt-8">
-                            <button className="w-full bg-white text-black font-bold py-3 rounded-lg hover:bg-gray-200 transition-colors">
-                                Get Directions
-                            </button>
+                            <a
+                                href="https://www.google.com/maps/dir//Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold transition-colors duration-300 w-full md:w-auto">
+                                    Get Directions
+                                </button>
+                            </a>
+
                         </div>
                     </div>
 
