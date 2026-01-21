@@ -55,9 +55,16 @@ const Reviews = () => {
                             "Great place to have tasty food and to spend time with family nd beloved once."
                             We value honest feedback to keep improving.
                         </p>
-                        <button className="bg-white text-black hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition-colors">
-                            Write a Review
-                        </button>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="bg-white text-black hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition-colors">
+                                Write a Review
+                            </button>
+                        </a>
+
                     </div>
 
                     <div className="space-y-6">
