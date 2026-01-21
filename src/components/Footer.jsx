@@ -51,9 +51,16 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="mt-6">
-                            <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold transition-colors duration-300 w-full md:w-auto">
-                                Get Directions
-                            </button>
+                            <a
+                                href="https://www.google.com/maps/dir//Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold transition-colors duration-300 w-full md:w-auto">
+                                    Get Directions
+                                </button>
+                            </a>
+
                         </div>
                     </div>
 
@@ -63,7 +70,7 @@ const Footer = () => {
                     <p>&copy; {new Date().getFullYear()} Chittoor Cafe. All rights reserved.</p>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 };
 
