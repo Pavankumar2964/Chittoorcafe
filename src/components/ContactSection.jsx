@@ -36,7 +36,7 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-semibold mb-1">Phone</h4>
-                                    <p className="text-gray-400 text-sm">+91 XXXXXXXXXX</p>
+                                    <p className="text-gray-400 text-sm">+91 9347157442</p>
                                 </div>
                             </div>
 

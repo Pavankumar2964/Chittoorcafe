@@ -25,7 +25,7 @@ const Footer = () => {
                                 <Instagram size={20} />
                             </a>
 
-                            <a href="#" className="hover:text-yellow-400 transition-colors"><Twitter size={20} /></a>
+
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center">
                                 <Phone className="w-5 h-5 text-yellow-500 mr-2" />
-                                <p className="text-sm">+91 XXXXXXXXXX</p>
+                                <p className="text-sm">+91 9347157442</p>
                             </div>
                         </div>
                     </div>
