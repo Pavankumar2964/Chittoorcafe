@@ -15,7 +15,6 @@ const Footer = () => {
                             Fresh ingredients, traditional recipes, and a premium dining atmosphere.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="hover:text-yellow-400 transition-colors"><Facebook size={20} /></a>
                             <a
                                 href="https://www.instagram.com/chittoorcafe" // replace with actual username
                                 target="_blank"
