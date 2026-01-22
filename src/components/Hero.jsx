@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { Phone, MapPin, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -22,34 +22,49 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="text-yellow-400 font-medium tracking-wider uppercase text-sm md:text-base mb-4 block">
-                        Welcome to Chittoor Cafe
-                    </span>
-                    <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
-                        Taste the Tradition of <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
-                            Andhra Spice
+                    <div className="flex justify-center items-center gap-2 mb-4">
+                        <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                            ⭐ 4.1 | 700+ Reviews
+                        </span>
+                    </div>
+
+                    <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-2 leading-tight">
+                        Chittoor Cafe <br />
+                        <span className="text-3xl md:text-5xl font-normal text-yellow-400 block mt-2">
+                            చిత్తూరు కేఫ్
                         </span>
                     </h1>
-                    <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-                        From our Special Mixed Non-Veg Mandi to the classic Veg Biryani,
-                        experience culinary excellence in a premium setting.
+
+                    <p className="text-xl md:text-2xl text-gray-200 mt-4 font-medium italic tracking-wide">
+                        "Authentic Andhra Taste"
                     </p>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+                        <a
+                            href="tel:+919347157442"
+                            className="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-transform hover:scale-105 shadow-lg shadow-yellow-500/20"
+                        >
+                            <Phone size={20} />
+                            Call Now
+                        </a>
 
-                        <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-bold text-lg transition-all duration-300">
-                            View Menu
-                        </button>
+                        <a
+                            href="https://www.google.com/maps/dir//Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+                        >
+                            <MapPin size={20} />
+                            Get Directions
+                        </a>
+                    </div>
+
+                    <div className="mt-8">
+                        <a href="#menu" className="text-gray-400 hover:text-white flex items-center justify-center gap-1 text-sm font-medium transition-colors">
+                            View Menu <ArrowRight size={14} />
+                        </a>
                     </div>
                 </motion.div>
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
-                <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
-                    <div className="w-1 h-2 bg-yellow-500 rounded-full"></div>
-                </div>
             </div>
         </div>
     );

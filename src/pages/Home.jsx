@@ -6,27 +6,26 @@ import ContactSection from '../components/ContactSection';
 
 const Home = () => {
     return (
-        <main>
+        <main className="bg-black min-h-screen">
             <Hero />
-            <MenuSection />
-            {/* About Section Inline or component - Adding a brief about section here */}
-            <section id="about" className="py-20 bg-black text-center px-4">
-                <div className="max-w-4xl mx-auto">
-                    <span className="text-yellow-500 font-semibold tracking-wider uppercase text-sm">Our Story</span>
-                    <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold text-white mb-6">Legacy of Flavor</h2>
-                    <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                        Chittoor Cafe brings you the authentic essence of Andhra cuisine.
-                        Located on the Bengaluru - Tirupati Hwy, we are the perfect pitstop for travelers and locals alike.
-                        Whether it's our signature Mandi, spicy Biryanis, or refreshing beverages, every dish is crafted with passion.
+
+            {/* Short About Section */}
+            <section id="about" className="py-16 bg-neutral-900 border-b border-white/5 text-center px-4">
+                <div className="max-w-2xl mx-auto">
+                    <h2 className="text-2xl font-bold text-yellow-500 mb-4 font-display">About Us</h2>
+                    <p className="text-gray-300 text-lg leading-relaxed">
+                        "Chittoor Cafe serves authentic Andhra-style vegetarian and non-vegetarian meals made with traditional recipes and fresh ingredients. Experience the true taste of home."
                     </p>
-                    <img
-                        src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop"
-                        alt="Restaurant Interior"
-                        className="w-full h-80 object-cover rounded-2xl opacity-80 hover:opacity-100 transition-opacity duration-500"
-                    />
                 </div>
             </section>
+
+            {/* Menu Preview */}
+            <MenuSection preview={true} />
+
+            {/* Reviews Section */}
             <Reviews />
+
+            {/* Contact Section */}
             <ContactSection />
         </main>
     );
