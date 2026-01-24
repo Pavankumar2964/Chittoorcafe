@@ -25,25 +25,27 @@ const Navbar = () => {
 
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            {link.path.startsWith('/#') ? (
-                                <a
-                                    key={link.name}
-                                    href={link.path}
-                                    className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                                >
-                                    {link.name}
-                                </a>
-                            ) : (
-                                <Link
-                                    key={link.name}
-                                    to={link.path}
-                                    className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                                >
-                                    {link.name}
-                                </Link>
+                            {navLinks.map((link) =>
+                                link.path.startsWith('/#') ? (
+                                    <a
+                                        key={link.name}
+                                        href={link.path}
+                                        className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                                    >
+                                        {link.name}
+                                    </a>
+                                ) : (
+                                    <Link
+                                        key={link.name}
+                                        to={link.path}
+                                        className="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                )
                             )}
-
                         </div>
+
                     </div>
 
                     <div className="md:hidden">
