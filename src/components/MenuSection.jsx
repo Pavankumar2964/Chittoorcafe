@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import menu from '../data/menu';
 
 const MenuSection = ({ preview = false }) => {
@@ -70,9 +69,9 @@ const MenuSection = ({ preview = false }) => {
                 {preview && (
                     <div className="text-center mt-12">
                         {/* In a real app, this would link to /menu or expand the view */}
-                        <Link to="/menu" className="bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black px-8 py-3 rounded-full font-bold transition-all duration-300 flex items-center justify-center gap-2 mx-auto">
+                        <button onClick={() => window.location.href = '/menu'} className="bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black px-8 py-3 rounded-full font-bold transition-all duration-300 flex items-center justify-center gap-2 mx-auto">
                             View Full Menu <ArrowRight size={18} />
-                        </Link>
+                        </button>
                     </div>
                 )}
             </div>
