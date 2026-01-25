@@ -5,34 +5,31 @@ const ScrollToTop = () => {
     const { pathname, hash } = useLocation();
     const navigate = useNavigate();
 
-    // Scroll to top on every route/hash change
+    // 1. Scroll to top on EVERY internal navigation (route or hash change)
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname, hash]);
 
-    // Special logic: Always go to home on refresh/initial load
-    // To detect a refresh vs a normal navigation, we can check if it's the mount
-    // and if the path is not '/' or there's a hash.
+    // 2. Logic to handle Refresh/Initial Entry: Always go Home
     useEffect(() => {
-        const isFirstMount = !window.sessionStorage.getItem('app_mounted');
+        const perfEntries = performance.getEntriesByType('navigation');
+        const isReload = perfEntries.length > 0 && perfEntries[0].type === 'reload';
 
-        if (isFirstMount) {
-            window.sessionStorage.setItem('app_mounted', 'true');
+        // We use sessionStorage to track if this is the very first time the app is loading
+        // in this tab. This helps distinguish "initial entry" from "internal navigation".
+        const hasLoadedBefore = sessionStorage.getItem('app_has_loaded');
+
+        if (isReload || !hasLoadedBefore) {
+            // If it's a reload OR the very first time entering the site (deep link)
             if (pathname !== '/' || hash !== '') {
+                // Redirect to root
                 navigate('/', { replace: true });
             }
         }
 
-        // Cleanup on beforeunload to detect refresh as a "new mount"
-        // Note: Some browsers might keep sessionStorage, but a hard refresh usually resets it or we can use a more robust check.
-        // Actually, PerformanceNavigationTiming is better for "reload" detection.
-        const navEntries = performance.getEntriesByType('navigation');
-        if (navEntries.length > 0 && navEntries[0].type === 'reload') {
-            if (pathname !== '/' || hash !== '') {
-                navigate('/', { replace: true });
-            }
-        }
-    }, []);
+        // Mark that the app has now loaded at least once
+        sessionStorage.setItem('app_has_loaded', 'true');
+    }, []); // Empty dependency array means this runs only once when the app mounts
 
     return null;
 };
