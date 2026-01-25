@@ -14,7 +14,7 @@ const menu = [
         items: [
             { name: "Andhra Veg Meals", price: 120, veg: true, image: "/images/menu/meals.png" },
             { name: "Andhra Non-Veg Meals", price: 180, veg: false, image: "/images/menu/AndhraNonvegmeals.jpg" },
-            { name: "Ragi Sangati + Natu Kodi Pulusu", price: 220, veg: false, image: "/images/menu/Ragi-Sangati-with-Natu-Kodi-Pulusu.jpg" },
+            { name: "Ragi Sangati + Natu Kodi Pulusu", price: 220, veg: false, image: "/images/menu/AndhraNonvegmeals.jpeg" },
             { name: "Chicken Biryani", price: 200, veg: false, image: "/images/menu/biryani.png" }
         ]
     },
