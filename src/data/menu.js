@@ -13,7 +13,7 @@ const menu = [
         category: "Meals",
         items: [
             { name: "Andhra Veg Meals", price: 120, veg: true, image: "/images/menu/meals.png" },
-            { name: "Andhra Non-Veg Meals", price: 180, veg: false, image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2070&auto=format&fit=crop" },
+            { name: "Andhra Non-Veg Meals", price: 180, veg: false, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtc2ywxT-CAUBd_AEnVZoWOi_PRDATNk-uA&s" },
             { name: "Ragi Sangati + Natu Kodi Pulusu", price: 220, veg: false, image: "https://vivahabhojanambu.co.in/wp-content/uploads/2021/02/Ragi-Sangati-with-Natu-Kodi-Pulusu.jpg" },
             { name: "Chicken Biryani", price: 200, veg: false, image: "/images/menu/biryani.png" }
         ]
