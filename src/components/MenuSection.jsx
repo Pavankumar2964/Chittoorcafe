@@ -23,7 +23,7 @@ const MenuSlider = ({ items }) => {
                     transition={{ duration: 0.3 }}
                     className="bg-black/40 rounded-3xl border border-white/5 overflow-hidden flex flex-col md:flex-row gap-6 p-4 h-full min-h-[400px]"
                 >
-                    <div className="w-full md:w-1/2 h-64 md:h-auto relative rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="w-full md:w-1/2 h-64 md:h-[400px] relative rounded-2xl overflow-hidden shadow-2xl">
                         {item.image ? (
                             <img
                                 src={item.image}
