@@ -18,8 +18,8 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0">
-                        <Link to="/" className="text-2xl font-bold font-display text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
-                            Chittoor Cafe
+                        <Link to="/" className="text-2xl font-bold font-display text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600 hover:from-amber-400 hover:via-amber-500 hover:to-yellow-600 transition-all duration-300">
+                            TARA CAFE
                         </Link>
                     </div>
 

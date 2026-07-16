@@ -29,20 +29,20 @@ const Hero = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-2 leading-tight">
-                        Chittoor Cafe <br />
-                        <span className="text-3xl md:text-5xl font-normal text-yellow-400 block mt-2">
-                            చిత్తూరు కేఫ్
+                        TARA CAFE <br />
+                        <span className="text-3xl md:text-5xl font-normal text-amber-400 block mt-2">
+                            తార కేఫ్
                         </span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-gray-200 mt-4 font-medium italic tracking-wide">
-                        "Authentic Andhra Taste"
+                        "Premium Andhra Taste"
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
                         <a
                             href="tel:+919347157442"
-                            className="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-transform hover:scale-105 shadow-lg shadow-yellow-500/20"
+                            className="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-black px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-transform hover:scale-105 shadow-lg shadow-amber-500/20"
                         >
                             <Phone size={20} />
                             Call Now

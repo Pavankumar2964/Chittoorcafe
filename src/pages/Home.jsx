@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import MenuSection from '../components/MenuSection';
 import Reviews from '../components/Reviews';
 import ContactSection from '../components/ContactSection';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
@@ -10,13 +11,19 @@ const Home = () => {
             <Hero />
 
             {/* Short About Section */}
-            <section id="about" className="py-16 bg-neutral-900 border-b border-white/5 text-center px-4">
-                <div className="max-w-2xl mx-auto">
-                    <h2 className="text-2xl font-bold text-yellow-500 mb-4 font-display">About Us</h2>
-                    <p className="text-gray-300 text-lg leading-relaxed">
-                        "Chittoor Cafe serves authentic Andhra-style vegetarian and non-vegetarian meals made with traditional recipes and fresh ingredients. Experience the true taste of home."
+            <section id="about" className="py-12 md:py-16 bg-gradient-to-b from-black via-neutral-900 to-black border-b border-amber-500/10 text-center px-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="max-w-2xl mx-auto"
+                >
+                    <h2 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4 font-display">About TARA CAFE</h2>
+                    <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                        "TARA CAFE serves authentic Andhra-style vegetarian and non-vegetarian meals made with traditional recipes and fresh ingredients. Experience the true taste of home with a premium dining atmosphere."
                     </p>
-                </div>
+                </motion.div>
             </section>
 
             {/* Menu Preview */}

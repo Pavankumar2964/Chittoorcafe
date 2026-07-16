@@ -9,7 +9,7 @@ const Footer = () => {
 
                     {/* Brand & About */}
                     <div>
-                        <h3 className="text-2xl font-display font-bold text-yellow-500 mb-4">Chittoor Cafe</h3>
+                        <h3 className="text-2xl font-display font-bold text-amber-500 mb-4">TARA CAFE</h3>
                         <p className="text-sm leading-relaxed mb-4">
                             Experience the authentic taste of Andhra with our special Mandi and Biryanis.
                             Fresh ingredients, traditional recipes, and a premium dining atmosphere.
@@ -33,7 +33,7 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
                         <div className="space-y-3">
                             <div className="flex items-start">
-                                <MapPin className="w-5 h-5 text-yellow-500 mr-2 mt-1" />
+                                <MapPin className="w-5 h-5 text-amber-500 mr-2 mt-1" />
                                 <p className="text-sm">
                                     32-802, Bengaluru - Tirupati Hwy,<br />
                                     near Sri Sai Convension, Murukampattu,<br />
@@ -41,7 +41,7 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className="flex items-center">
-                                <Phone className="w-5 h-5 text-yellow-500 mr-2" />
+                                <Phone className="w-5 h-5 text-amber-500 mr-2" />
                                 <p className="text-sm">+91 9347157442</p>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-4">Opening Hours</h3>
                         <div className="flex items-start">
-                            <Clock className="w-5 h-5 text-yellow-500 mr-2 mt-1" />
+                            <Clock className="w-5 h-5 text-amber-500 mr-2 mt-1" />
                             <div>
                                 <p className="text-sm">Mon - Sun: 7:00 AM - 11:00 PM</p>
                                 <p className="text-xs text-green-400 mt-1">Open Now</p>
@@ -63,7 +63,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold transition-colors duration-300 w-full md:w-auto">
+                                <button className="bg-amber-500 hover:bg-amber-600 text-black px-6 py-2 rounded-full font-semibold transition-colors duration-300 w-full md:w-auto">
                                     Get Directions
                                 </button>
                             </a>
@@ -74,7 +74,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Chittoor Cafe. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} TARA CAFE. All rights reserved.</p>
                 </div>
             </div>
         </footer >

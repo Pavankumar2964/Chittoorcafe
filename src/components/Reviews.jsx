@@ -34,14 +34,14 @@ const Reviews = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <span className="text-yellow-500 font-semibold tracking-wider uppercase text-sm">Reviews</span>
-                        <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold text-white mb-6">
+                        <span className="text-amber-500 font-semibold tracking-wider uppercase text-sm inline-block px-3 py-1 bg-amber-500/10 rounded-full">Reviews</span>
+                        <h2 className="mt-4 text-3xl md:text-4xl font-display font-bold text-white mb-6">
                             What Our Customers Say
                         </h2>
                         <div className="flex items-center space-x-4 mb-8">
                             <div className="text-5xl font-bold text-white">4.1</div>
                             <div>
-                                <div className="flex text-yellow-500">
+                                <div className="flex text-amber-500">
                                     <Star className="w-5 h-5 fill-current" />
                                     <Star className="w-5 h-5 fill-current" />
                                     <Star className="w-5 h-5 fill-current" />
@@ -56,11 +56,11 @@ const Reviews = () => {
                             We value honest feedback to keep improving.
                         </p>
                         <a
-                            href="https://www.google.com/maps/search/?api=1&query=Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                            href="https://www.google.com/maps/search/?api=1&query=TARA+CAFE,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <button className="bg-white text-black hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition-colors">
+                            <button className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black px-8 py-3 rounded-full font-bold transition-all hover:scale-105">
                                 Write a Review
                             </button>
                         </a>
@@ -77,7 +77,7 @@ const Reviews = () => {
                                         <h4 className="text-white font-bold text-sm">{review.name}</h4>
                                         <p className="text-gray-500 text-xs">{review.role}</p>
                                     </div>
-                                    <div className="ml-auto flex text-yellow-500">
+                                    <div className="ml-auto flex text-amber-500">
                                         {[...Array(5)].map((_, i) => (
                                             <Star
                                                 key={i}

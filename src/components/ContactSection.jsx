@@ -6,20 +6,20 @@ const ContactSection = () => {
         <section id="contact" className="py-20 bg-neutral-900 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <span className="text-yellow-500 font-semibold tracking-wider uppercase text-sm">Visit Us</span>
-                    <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold text-white">Find Our Location</h2>
-                    <div className="w-20 h-1 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
+                    <span className="text-amber-500 font-semibold tracking-wider uppercase text-sm inline-block px-3 py-1 bg-amber-500/10 rounded-full">Visit Us</span>
+                    <h2 className="mt-4 text-3xl md:text-4xl font-display font-bold text-white">Find Our Location</h2>
+                    <div className="w-20 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mt-4 rounded-full"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Contact Info */}
-                    <div className="bg-black p-8 rounded-2xl border border-white/10">
-                        <h3 className="text-2xl font-bold text-white mb-6">Chittoor Cafe</h3>
+                    <div className="bg-black p-8 rounded-2xl border border-white/10 hover:border-amber-500/30 transition-colors">
+                        <h3 className="text-2xl font-bold text-white mb-6">TARA CAFE</h3>
 
                         <div className="space-y-6">
                             <div className="flex items-start group">
-                                <div className="bg-yellow-500/10 p-3 rounded-full mr-4 group-hover:bg-yellow-500/20 transition-colors">
-                                    <MapPin className="w-6 h-6 text-yellow-500" />
+                                <div className="bg-amber-500/10 p-3 rounded-full mr-4 group-hover:bg-amber-500/20 transition-colors">
+                                    <MapPin className="w-6 h-6 text-amber-500" />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-semibold mb-1">Address</h4>
@@ -31,8 +31,8 @@ const ContactSection = () => {
                             </div>
 
                             <div className="flex items-start group">
-                                <div className="bg-yellow-500/10 p-3 rounded-full mr-4 group-hover:bg-yellow-500/20 transition-colors">
-                                    <Phone className="w-6 h-6 text-yellow-500" />
+                                <div className="bg-amber-500/10 p-3 rounded-full mr-4 group-hover:bg-amber-500/20 transition-colors">
+                                    <Phone className="w-6 h-6 text-amber-500" />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-semibold mb-1">Phone</h4>
@@ -41,8 +41,8 @@ const ContactSection = () => {
                             </div>
 
                             <div className="flex items-start group">
-                                <div className="bg-yellow-500/10 p-3 rounded-full mr-4 group-hover:bg-yellow-500/20 transition-colors">
-                                    <Clock className="w-6 h-6 text-yellow-500" />
+                                <div className="bg-amber-500/10 p-3 rounded-full mr-4 group-hover:bg-amber-500/20 transition-colors">
+                                    <Clock className="w-6 h-6 text-amber-500" />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-semibold mb-1">Hours</h4>
@@ -53,11 +53,11 @@ const ContactSection = () => {
 
                         <div className="mt-8">
                             <a
-                                href="https://www.google.com/maps/dir//Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                                href="https://www.google.com/maps/dir//TARA+CAFE,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold transition-colors duration-300 w-full md:w-auto">
+                                <button className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black px-6 py-2 rounded-full font-semibold transition-all hover:scale-105 w-full md:w-auto">
                                     Get Directions
                                 </button>
                             </a>

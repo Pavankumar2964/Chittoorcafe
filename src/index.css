@@ -6,24 +6,63 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-body;
+    @apply bg-black text-white font-body scroll-smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Premium Gold Styling */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
+  background: linear-gradient(to bottom, #fbbf24, #f59e0b);
+  border-radius: 10px;
+  border: 2px solid #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: linear-gradient(to bottom, #fcd34d, #fbbf24);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-color: #f59e0b #1a1a1a;
+  scrollbar-width: thin;
+}
+
+/* Smooth animations for interactive elements */
+@layer components {
+  .golden-glow {
+    @apply shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-shadow duration-300;
+  }
+
+  .btn-golden {
+    @apply bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg shadow-amber-500/30;
+  }
+
+  .glass-effect {
+    @apply bg-black/40 backdrop-blur-md border border-white/10;
+  }
+}
+
+/* Selection styling */
+::selection {
+  background-color: #f59e0b;
+  color: #000;
+}
+
+::-moz-selection {
+  background-color: #f59e0b;
+  color: #000;
 }
