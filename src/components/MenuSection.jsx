@@ -138,7 +138,7 @@ const MenuSlider = ({ items }) => {
 const MenuSection = ({ preview = false }) => {
     // For preview mode, we'll pick specific popular items
     const previewItems = (() => {
-        const popularNames = ["Andhra Veg Meals", "Dosa", "Idli", "Chicken Biryani", "Filter Coffee"];
+        const popularNames = ["Mango Juice", "Orange Juice", "Mango Ice Cream", "Rose Falooda", "Pistachio Falooda"];
         const foundItems = [];
 
         // Flatten the menu to search
