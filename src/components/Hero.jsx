@@ -13,6 +13,23 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/60 gradient-mask-b-0"></div>
+                <div className="pointer-events-none absolute right-8 top-16 hidden xl:block">
+                    <div className="relative w-56 h-72">
+                        <div className="absolute -left-6 top-10 w-24 h-24 rounded-full bg-amber-500/15 blur-2xl"></div>
+                        <div className="absolute right-0 top-0 w-36 h-48 rounded-[40px] border border-amber-300/30 bg-white/10 shadow-[0_24px_80px_rgba(251,191,36,0.15)]"></div>
+                        <div className="absolute left-1/2 top-10 -translate-x-1/2 w-24 h-32 rounded-full bg-amber-300/15"></div>
+                        <div className="absolute left-1/2 top-6 -translate-x-1/2 w-10 h-20 rounded-full bg-amber-200/40"></div>
+                        <div className="absolute left-1/2 top-16 -translate-x-1/2 w-16 h-24 rounded-full bg-white/20"></div>
+                        <div className="absolute left-1/2 top-40 -translate-x-1/2 w-20 h-6 rounded-full bg-amber-300/10"></div>
+                    </div>
+                </div>
+                <div className="pointer-events-none absolute left-10 top-32 hidden lg:block">
+                    <div className="flex flex-col gap-3">
+                        <span className="block w-3 h-3 rounded-full bg-amber-300 shadow-lg shadow-amber-400/30"></span>
+                        <span className="block w-4 h-4 rounded-full bg-emerald-300 shadow-lg shadow-emerald-300/30"></span>
+                        <span className="block w-2 h-2 rounded-full bg-red-400 shadow-lg shadow-red-400/30"></span>
+                    </div>
+                </div>
             </div>
 
             {/* Content */}
@@ -36,7 +53,10 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-xl md:text-2xl text-gray-200 mt-4 font-medium italic tracking-wide">
-                        "Premium Andhra Taste"
+                        "Fresh juices, dreamy ice creams, and decadent falooda crafted for every craving."
+                    </p>
+                    <p className="max-w-2xl mx-auto text-gray-400 mt-4 text-sm md:text-base">
+                        Discover a futuristic dessert lounge where bold flavors meet premium refreshment.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
@@ -49,7 +69,7 @@ const Hero = () => {
                         </a>
 
                         <a
-                            href="https://www.google.com/maps/dir//Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                            href="https://www.google.com/maps/dir//TARA+CAFE,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all hover:scale-105"

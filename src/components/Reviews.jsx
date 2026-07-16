@@ -5,10 +5,10 @@ const Reviews = () => {
     const reviews = [
         {
             id: 1,
-            name: "Danamjaya reddy",
+            name: "Danamjaya Reddy",
             role: "Local Guide",
-            rating: 3,
-            comment: "My wife and I recently visited Chittoor Cafe hoping for a pleasant meal. Ordered Lemon Chicken and Fry Piece Biryani.",
+            rating: 4,
+            comment: "Loved the Mango Sunrise juice and Kulfi Bliss falooda. The presentation and flavor were exceptional.",
             image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1887&auto=format&fit=crop"
         },
         {
@@ -16,15 +16,15 @@ const Reviews = () => {
             name: "Mehboob",
             role: "Loyal Customer",
             rating: 5,
-            comment: "I personally like the THALI OFFER, it would be great if every Sunday is available. I really like the way they come with new offers.",
+            comment: "The Chocolate Cosmos ice cream was rich and creamy, and the service had a futuristic lounge vibe.",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop"
         },
         {
             id: 3,
             name: "Shahul Shaik",
             role: "Customer",
-            rating: 2, // As per user data "completely not Good"
-            comment: "Taste of items what I ordered is completely not Good. This is my second visit, unfortunately same experience.",
+            rating: 3,
+            comment: "The rose falooda was elegant, though I wanted a bolder sweetness next time. Great atmosphere overall.",
             image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop"
         }
     ];

@@ -2,40 +2,28 @@ const menu = [
     {
         category: "Fresh Juices",
         items: [
-            { name: "Mango Juice", price: 60, veg: true, description: "Refreshing tropical mango fresh juice made daily", image: "/images/menu/mango-juice.png" },
-            { name: "Orange Juice", price: 55, veg: true, description: "Citrus fresh orange juice packed with vitamin C", image: "/images/menu/orange-juice.png" },
-            { name: "Watermelon Juice", price: 50, veg: true, description: "Cool and hydrating watermelon fresh juice", image: "/images/menu/watermelon-juice.png" },
-            { name: "Pineapple Juice", price: 55, veg: true, description: "Tropical pineapple juice with natural sweetness", image: "/images/menu/pineapple-juice.png" },
-            { name: "Pomegranate Juice", price: 70, veg: true, description: "Antioxidant-rich pomegranate juice", image: "/images/menu/pomegranate-juice.png" },
-            { name: "Mixed Fruit Juice", price: 65, veg: true, description: "Blend of fresh seasonal fruits", image: "/images/menu/mixed-fruit-juice.png" },
-            { name: "Sugarcane Juice", price: 45, veg: true, description: "Fresh pressed sweet sugarcane juice", image: "/images/menu/sugarcane-juice.png" },
-            { name: "Papaya Juice", price: 50, veg: true, description: "Smooth and creamy papaya fresh juice", image: "/images/menu/papaya-juice.png" }
+            { name: "Mango Sunrise", price: 80, tag: "Tropical Glow", description: "Fresh mango juice blended with zesty lime and golden honey.", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Orange Spark", price: 75, tag: "Vitamin Burst", description: "Cold-pressed orange juice with a hint of mint for bright refreshment.", image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Watermelon Chill", price: 70, tag: "Hydration Hero", description: "Juicy watermelon cooler with a dash of lime and mint.", image: "https://images.unsplash.com/photo-1562599938-3d60a9ed22b6?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Berry Fusion", price: 85, tag: "Berry Bliss", description: "Mixed berry juice layered with a crisp citrus finish.", image: "https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1200&q=80" }
         ]
     },
     {
         category: "Premium Ice Creams",
         items: [
-            { name: "Vanilla Ice Cream", price: 80, veg: true, description: "Classic creamy vanilla ice cream", image: "/images/menu/vanilla-ice-cream.png" },
-            { name: "Chocolate Ice Cream", price: 85, veg: true, description: "Rich and decadent chocolate ice cream", image: "/images/menu/chocolate-ice-cream.png" },
-            { name: "Strawberry Ice Cream", price: 85, veg: true, description: "Fresh strawberry flavored ice cream", image: "/images/menu/strawberry-ice-cream.png" },
-            { name: "Pistachio Ice Cream", price: 95, veg: true, description: "Premium pistachio ice cream with nuts", image: "/images/menu/pistachio-ice-cream.png" },
-            { name: "Mango Ice Cream", price: 90, veg: true, description: "Creamy mango flavored ice cream", image: "/images/menu/mango-ice-cream.png" },
-            { name: "Butter Pecan Ice Cream", price: 90, veg: true, description: "Buttery pecan ice cream with real nuts", image: "/images/menu/butter-pecan-ice-cream.png" },
-            { name: "Mint Chocolate Ice Cream", price: 85, veg: true, description: "Refreshing mint with chocolate chips", image: "/images/menu/mint-chocolate-ice-cream.png" },
-            { name: "Kulfi Ice Cream", price: 75, veg: true, description: "Traditional Indian kulfi ice cream", image: "/images/menu/kulfi-ice-cream.png" }
+            { name: "Vanilla Velvet", price: 95, tag: "Silky Scoop", description: "Creamy vanilla ice cream with a subtle caramel swirl.", image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Chocolate Cosmos", price: 105, tag: "Dark Decadence", description: "Rich chocolate ice cream with intense cocoa notes.", image: "https://images.unsplash.com/photo-1505253213041-7f911d0134c4?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Mango Mirage", price: 100, tag: "Golden Cream", description: "Fresh mango ice cream with a vibrant tropical aroma.", image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Pistachio Dream", price: 110, tag: "Nutty Luxe", description: "Smooth pistachio ice cream finished with crunchy nut pieces.", image: "https://images.unsplash.com/photo-1524594154900-3b0c0ba5837a?auto=format&fit=crop&w=1200&q=80" }
         ]
     },
     {
-        category: "Delicious Faloodas",
+        category: "Signature Faloodas",
         items: [
-            { name: "Rose Falooda", price: 120, veg: true, description: "Classic rose-flavored falooda with vermicelli and ice cream", image: "/images/menu/rose-falooda.png" },
-            { name: "Mango Falooda", price: 130, veg: true, description: "Creamy mango falooda with fresh mango puree", image: "/images/menu/mango-falooda.png" },
-            { name: "Pistachio Falooda", price: 140, veg: true, description: "Premium pistachio falooda with dry fruits", image: "/images/menu/pistachio-falooda.png" },
-            { name: "Chocolate Falooda", price: 130, veg: true, description: "Rich chocolate falooda with chocolate sauce", image: "/images/menu/chocolate-falooda.png" },
-            { name: "Strawberry Falooda", price: 125, veg: true, description: "Fresh strawberry falooda with strawberry sauce", image: "/images/menu/strawberry-falooda.png" },
-            { name: "Mixed Fruit Falooda", price: 135, veg: true, description: "Falooda with mixed fruits and flavors", image: "/images/menu/mixed-fruit-falooda.png" },
-            { name: "Kulfi Falooda", price: 125, veg: true, description: "Traditional kulfi with vermicelli and basil seeds", image: "/images/menu/kulfi-falooda.png" },
-            { name: "Butterscotch Falooda", price: 135, veg: true, description: "Sweet butterscotch falooda with caramel sauce", image: "/images/menu/butterscotch-falooda.png" }
+            { name: "Rose Symphony", price: 140, tag: "Floral Indulgence", description: "Classic rose falooda with kulfi, basil seeds, and silky syrup.", image: "https://images.unsplash.com/photo-1540332968555-6ab7b14ed8da?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Mango Royale", price: 150, tag: "Royal Blend", description: "Mango falooda infused with luscious mango puree and cream.", image: "https://images.unsplash.com/photo-1527515637462-1d72d4402d4a?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Choco Cascade", price: 145, tag: "Velvet Rush", description: "Decadent chocolate falooda layered with creamy chocolate sauce.", image: "https://images.unsplash.com/photo-1516684669134-de6c6fa7fcc4?auto=format&fit=crop&w=1200&q=80" },
+            { name: "Kulfi Bliss", price: 150, tag: "Creamy Classic", description: "Traditional kulfi falooda with vermicelli, nuts, and rose essence.", image: "https://images.unsplash.com/photo-1606211138906-5c7b86bf0c93?auto=format&fit=crop&w=1200&q=80" }
         ]
     }
 ];

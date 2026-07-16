@@ -11,12 +11,12 @@ const Footer = () => {
                     <div>
                         <h3 className="text-2xl font-display font-bold text-amber-500 mb-4">TARA CAFE</h3>
                         <p className="text-sm leading-relaxed mb-4">
-                            Experience the authentic taste of Andhra with our special Mandi and Biryanis.
-                            Fresh ingredients, traditional recipes, and a premium dining atmosphere.
+                            Enjoy premium juices, indulgent ice creams, and signature faloodas in a futuristic cafe setting.
+                            Crafted beverages and desserts made for modern taste.
                         </p>
                         <div className="flex space-x-4">
                             <a
-                                href="https://www.instagram.com/chittoorcafe" // replace with actual username
+                                href="https://www.instagram.com/taracafe"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-yellow-400 transition-colors"
@@ -59,7 +59,7 @@ const Footer = () => {
                         </div>
                         <div className="mt-6">
                             <a
-                                href="https://www.google.com/maps/dir//Chittoor+Cafe,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
+                                href="https://www.google.com/maps/dir//TARA+CAFE,32-802,Bengaluru-Tirupati+Hwy,Murukampattu,Andhra+Pradesh+517127"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

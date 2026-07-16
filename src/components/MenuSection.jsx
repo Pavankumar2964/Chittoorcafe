@@ -52,27 +52,37 @@ const MenuSlider = ({ items }) => {
                             <img
                                 src={item.image}
                                 alt={item.name}
+                                loading="lazy"
+                                onError={(e) => {
+                                    e.currentTarget.onerror = null;
+                                    e.currentTarget.src = '/images/menu/ice-cream.jpg';
+                                }}
                                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                             />
                         ) : (
-                            <div className="w-full h-full bg-gradient-to-br from-neutral-800 to-neutral-900 flex items-center justify-center text-gray-500 italic">
-                                Image Coming Soon
+                            <div className="w-full h-full bg-gradient-to-br from-neutral-800 to-neutral-900 flex items-center justify-center text-gray-400 italic">
+                                Crafted Flavors Coming Soon
                             </div>
                         )}
-                        <div className="absolute top-4 left-4">
-                            <span title={item.veg ? "Vegetarian" : "Non-Vegetarian"} className="bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">
-                                {item.veg ? "🟢 Veg" : "🔴 Non-Veg"}
-                            </span>
-                        </div>
+                        {item.tag && (
+                            <div className="absolute top-4 left-4">
+                                <span className="bg-amber-500/15 text-amber-300 backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium shadow-lg shadow-amber-500/10">
+                                    {item.tag}
+                                </span>
+                            </div>
+                        )}
                     </div>
 
                     <div className="w-full md:w-1/2 flex flex-col justify-center p-2 md:p-4">
                         <h4 className="text-2xl md:text-3xl font-display font-bold text-white mb-2 line-clamp-2">{item.name}</h4>
-                        <div className="w-12 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full mb-4 md:mb-6"></div>
+                        <div className="flex items-center gap-3 mb-4 md:mb-6">
+                            <div className="w-14 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                            <span className="text-xs uppercase tracking-widest text-gray-400">Signature Pour</span>
+                        </div>
                         <p className="text-gray-300 text-base md:text-lg mb-6 md:mb-8 italic line-clamp-3">
-                            {item.description || "A delicious house specialty made with the freshest local ingredients and authentic Andhra spices."}
+                            {item.description || "A premium cold beverage crafted for refreshing flavor."}
                         </p>
-                        <div className="flex items-center justify-between mt-auto">
+                        <div className="flex items-center justify-between mt-auto gap-4 flex-wrap">
                             <span className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-600">₹{item.price}</span>
                             <div className="text-xs md:text-sm text-gray-400 bg-black/40 px-3 py-1 rounded-full">
                                 {currentIndex + 1} / {items.length}
@@ -138,7 +148,7 @@ const MenuSlider = ({ items }) => {
 const MenuSection = ({ preview = false }) => {
     // For preview mode, we'll pick specific popular items
     const previewItems = (() => {
-        const popularNames = ["Mango Juice", "Orange Juice", "Mango Ice Cream", "Rose Falooda", "Pistachio Falooda"];
+        const popularNames = ["Mango Sunrise", "Orange Spark", "Mango Mirage", "Rose Symphony", "Pistachio Dream"];
         const foundItems = [];
 
         // Flatten the menu to search
@@ -157,7 +167,13 @@ const MenuSection = ({ preview = false }) => {
     const displayData = preview ? [{ category: "Popular Favorites", items: previewItems }] : menu;
 
     return (
-        <section id="menu" className="py-16 md:py-20 bg-black">
+        <section id="menu" className="relative py-16 md:py-20 bg-black overflow-hidden">
+            <div className="pointer-events-none absolute -left-16 top-10 hidden xl:block">
+                <div className="w-52 h-52 rounded-full bg-amber-500/10 blur-3xl"></div>
+            </div>
+            <div className="pointer-events-none absolute -right-16 bottom-10 hidden xl:block">
+                <div className="w-40 h-40 rounded-full bg-amber-500/10 blur-3xl"></div>
+            </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12 md:mb-16">
                     <motion.span

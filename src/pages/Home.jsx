@@ -21,7 +21,7 @@ const Home = () => {
                 >
                     <h2 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4 font-display">About TARA CAFE</h2>
                     <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                        "TARA CAFE serves authentic Andhra-style vegetarian and non-vegetarian meals made with traditional recipes and fresh ingredients. Experience the true taste of home with a premium dining atmosphere."
+                        "TARA CAFE is a premium dessert lounge serving freshly crafted juices, silky ice creams, and signature faloodas in an unforgettable modern atmosphere."
                     </p>
                 </motion.div>
             </section>
